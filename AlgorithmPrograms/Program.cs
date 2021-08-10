@@ -38,6 +38,11 @@ namespace AlgorithmPrograms
                         InsertionSort insort = new InsertionSort();
                         insort.inputArray();
                         break;
+                    case 3:
+                        Console.WriteLine("\n - Bubble sort implementation -");
+                        BubbleSort bsort = new BubbleSort();
+                        bsort.SortArray();
+                        break;
                     default:
                         Console.WriteLine(" Invalid choice number..");
                         break;

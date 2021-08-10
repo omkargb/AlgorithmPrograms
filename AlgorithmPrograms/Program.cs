@@ -23,15 +23,20 @@ namespace AlgorithmPrograms
             while (choice != 0)
             {
 
-                Console.Write("\n Enter your choice number : ");
+                Console.Write("\n\n Enter your choice number : ");
                 choice = int.Parse(Console.ReadLine());
 
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("\n Binary Searching for a word in array..");
+                        Console.WriteLine("\n - Binary Searching for a word in array - ");
                         BinarySearchWord bs = new BinarySearchWord();
                         bs.inputArray();
+                        break;
+                    case 2:
+                        Console.WriteLine("\n - Insertion sort implementation -");
+                        InsertionSort insort = new InsertionSort();
+                        insort.inputArray();
                         break;
                     default:
                         Console.WriteLine(" Invalid choice number..");

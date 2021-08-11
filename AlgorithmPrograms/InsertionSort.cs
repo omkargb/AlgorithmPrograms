@@ -17,7 +17,7 @@ namespace AlgorithmPrograms
                 string element = inputArray[a];
                 int b = a - 1;
                 //iterates through the sorted sub-array at back/left side
-                while (b >= 0 && (inputArray[b].CompareTo(element) >0))
+                while (b >= 0 && (element.CompareTo(inputArray[b])<0))
                 {
                     inputArray[b + 1] = inputArray[b];
                     b = b - 1;
@@ -26,7 +26,7 @@ namespace AlgorithmPrograms
                 inputArray[b + 1] = element;
             }
 
-            Console.Write("\n Sorted Array : ");
+            Console.Write("\n Sorted Array : \t");
             for (i = 0; i < inputArray.Length; i++)
             {
                 Console.Write(" {0}", inputArray[i]);
@@ -35,7 +35,7 @@ namespace AlgorithmPrograms
 
         public void inputArray()
         {
-            string[] inputArray = { "set", "array", "calc", "list", "delete", "print" ,"node"};
+            string[] inputArray = { "save", "array", "calc", "list", "delete", "int", "node", "print"};
             Console.Write(" Input array contains : ");
             int size = inputArray.Length;
 

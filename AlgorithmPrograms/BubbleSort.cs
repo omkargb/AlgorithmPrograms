@@ -23,6 +23,7 @@ namespace AlgorithmPrograms
                 {
                     if (inputArray[i] < inputArray[j])
                     {
+                        //swapping afterchecking the greater number
                         temp = inputArray[i];
                         inputArray[i] = inputArray[j];
                         inputArray[j] = temp;

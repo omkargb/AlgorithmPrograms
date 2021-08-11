@@ -15,7 +15,7 @@ namespace AlgorithmPrograms
                 "\n 4. Merge sort" +
                 "\n 5. Anagram Detection" +
                 "\n 6. Prime numbers in 1 to 1000" +
-                "\n 7. Find Anagram and palindrome prime numbers." +
+                "\n 7. Find palindrome prime numbers." +
                 "\n 8. Guess the number."+
                 "\n 0. Exit");
 
@@ -23,7 +23,8 @@ namespace AlgorithmPrograms
             while (choice != 0)
             {
 
-                Console.Write("\n\n Enter your choice number : ");
+                Console.WriteLine("\n -\t-\t-\t-\t-\t-\t-\t-\t-\t-\t ");
+                Console.Write("\n Enter your choice number : ");
                 choice = int.Parse(Console.ReadLine());
 
                 switch (choice)
@@ -43,6 +44,12 @@ namespace AlgorithmPrograms
                         BubbleSort bsort = new BubbleSort();
                         bsort.SortArray();
                         break;
+                    case 5:
+                        Console.WriteLine("\n - Anagram strings detection -");
+                        AnagramCheck check = new AnagramCheck();
+                        check.TakeInput();
+                        break;
+
                     default:
                         Console.WriteLine(" Invalid choice number..");
                         break;

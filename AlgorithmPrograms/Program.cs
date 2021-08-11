@@ -49,7 +49,11 @@ namespace AlgorithmPrograms
                         AnagramCheck check = new AnagramCheck();
                         check.TakeInput();
                         break;
-
+                    case 6:
+                        Console.WriteLine("\n - Printing prime numbers beetween 1 to 1000 -");
+                        PrimeNumberList prime = new PrimeNumberList();
+                        prime.PrimeCheck();
+                        break;
                     default:
                         Console.WriteLine(" Invalid choice number..");
                         break;

@@ -10,7 +10,7 @@ namespace AlgorithmPrograms
         {
             if (firstString.Length == secondString.Length)
             {
-                //convert the strings into character arrays with lowercase
+                //convert the strings into character arrays with Uppercase
                 char[] string1 = (firstString.ToUpper()).ToCharArray();
                 char[] string2 = (secondString.ToUpper()).ToCharArray();
 

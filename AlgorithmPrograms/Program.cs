@@ -15,7 +15,7 @@ namespace AlgorithmPrograms
                 "\n 4. Merge sort" +
                 "\n 5. Anagram Detection" +
                 "\n 6. Prime numbers in 1 to 1000" +
-                "\n 7. Find palindrome prime numbers." +
+                "\n 7. Find palindrome and anagram prime numbers." +
                 "\n 8. Guess the number."+
                 "\n 0. Exit");
 
@@ -53,6 +53,11 @@ namespace AlgorithmPrograms
                         Console.WriteLine("\n - Printing prime numbers beetween 1 to 1000 -");
                         PrimeNumberList prime = new PrimeNumberList();
                         prime.PrimeCheck();
+                        break;
+                    case 7:
+                        Console.WriteLine("\n - Printing palindrome and anagram prime numbers -");
+                        PalindromeAndAnagram pa = new PalindromeAndAnagram();
+                        pa.PrimeCheck();
                         break;
                     default:
                         Console.WriteLine(" Invalid choice number..");
